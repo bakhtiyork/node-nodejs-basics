@@ -1,10 +1,7 @@
 import path from 'path';
-import os from 'os';
-import http from 'http';
+import { release, version } from 'os';
+import { createServer } from 'http';
 import './files/c.js';
-
-const { release, version } = os;
-const { createServer } = http;
 
 const random = Math.random();
 
